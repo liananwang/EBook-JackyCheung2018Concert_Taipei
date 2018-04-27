@@ -1,24 +1,788 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="icG-mi-7NT">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="tAU-9O-D54">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="pH5-x7-awe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ctv-Uw-jC1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="闊別一年兩個月，歌神重返台北小巨蛋！「學友．經典世界巡迴演唱會 A CLASSIC TOUR–2018台北站」首場4/20登場，張學友帶來34年歌唱生涯經典代表作，以世界級製作規格，視覺與聽覺上完美結合，串起全場的歌迷們，共同寫下永難忘懷的經典之夜" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tZj-Uz-ki3">
+                                <rect key="frame" x="0.0" y="94" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="歌單介紹" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c6S-I9-hfm">
+                                <rect key="frame" x="5" y="64" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="經典曲目" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gZH-Sz-xzZ">
+                                <rect key="frame" x="5" y="176" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="經典曲目" translatesAutoresizingMaskIntoConstraints="NO" id="mNb-Jm-KaC">
+                                <rect key="frame" x="-11" y="208" width="425" height="479"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6R-1S-dSj">
+                                <rect key="frame" x="12" y="214" width="242" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="vsh-8D-63P" kind="show" id="SU3-ej-X1M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXT-ha-tbG">
+                                <rect key="frame" x="5" y="291" width="242" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Qqo-ln-C7B" kind="show" id="CoO-Cf-Gke"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uup-h6-66w">
+                                <rect key="frame" x="5" y="374" width="249" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="mEy-uN-x47" kind="show" id="qIy-hC-ecn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXe-w4-41V">
+                                <rect key="frame" x="9" y="457" width="316" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="i2O-9I-MOf" kind="show" id="REO-8H-hhV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbx-vg-yR6">
+                                <rect key="frame" x="5" y="539" width="316" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="8e7-8m-Zzf" kind="show" id="IoF-if-Gyz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB1-uI-fl4">
+                                <rect key="frame" x="5" y="614" width="316" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="0Fj-dV-MMx" kind="show" id="WDC-3R-PrN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5aK-mA-NDO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="utp-ZQ-ahZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLu-Nu-HFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2196" y="-1776"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bJG-9B-Z59">
+            <objects>
+                <viewController id="Qqo-ln-C7B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Cd-jj-0rL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="袛想一生跟你走-left" translatesAutoresizingMaskIntoConstraints="NO" id="ALI-lQ-TkG" userLabel="祗想一生跟你走">
+                                <rect key="frame" x="0.0" y="64" width="166" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="袛想一生跟你走-right" translatesAutoresizingMaskIntoConstraints="NO" id="WbU-Ff-TCF" userLabel="祗想一生跟你走">
+                                <rect key="frame" x="165" y="64" width="249" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kV0-Yu-Kj2">
+                                <rect key="frame" x="0.0" y="279" width="414" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">作詞：劉卓輝    作曲：巫啟賢/陳佳明
+
+共你有過最美的邂逅 
+共你有過一些風雨憂愁
+共你醉過痛過的最後 
+但我發覺想你不能沒有
+
+在你每次抱怨的眼眸 
+像我永遠不懂給你溫柔
+別再訴說我倆早已分手 
+像你教我傷心依然未夠
+
+但你沒帶走 夢裡的所有 
+讓你走 為何讓你看不透
+
+但求你未淡忘 往日舊情 我願默然帶著淚流 
+很想一生跟你走
+就算天邊海角 多少改變 一生只有 風中追究 
+不想孤單的逗留
+但求你未淡忘 往日舊情 我願默然帶著淚流 
+很想一生跟你走
+在我心中的你 思海的你 今生不可不能沒有
+
+在你每次抱怨的眼眸 
+像我永遠不懂給你溫柔
+別再訴說我倆早已分手 
+像你教我傷心依然未夠
+
+但你沒帶走 夢裡的所有 
+讓你走 為何讓你看不透
+
+但求你未淡忘 往日舊情 我願默然帶著淚流 
+很想一生跟你走
+就算天邊海角 多少改變 一生只有 風中追究 
+不想孤單的逗留
+但求你未淡忘 往日舊情 我願默然帶著淚流 
+很想一生跟你走
+在我心中的你 思海的你 今生不可不能沒有
+
+但求你未淡忘 往日舊情 我願默然帶著淚流 
+很想一生跟你走
+就算天邊海角 多少改變 一生只有 風中追究 
+不想孤單的逗留
+但求你未淡忘 往日舊情 我願默然帶著淚流 
+很想一生跟你走
+在我心中的你 思海的你 今生不可不能沒有
+</mutableString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="袛想一生跟你走 - Album Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMI-oy-BsR">
+                                <rect key="frame" x="5" y="216" width="407" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8FQ-lA-6Z8"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EUu-M4-vOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="3665" y="-2323"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JVT-5l-xdd">
+            <objects>
+                <viewController id="i2O-9I-MOf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vpV-oB-fRg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="一路上有你-left" translatesAutoresizingMaskIntoConstraints="NO" id="rbv-Ft-hQR">
+                                <rect key="frame" x="0.0" y="64" width="166" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="一路上有你-right" translatesAutoresizingMaskIntoConstraints="NO" id="9AD-JR-R5a">
+                                <rect key="frame" x="165" y="64" width="249" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="853-HK-ASM">
+                                <rect key="frame" x="0.0" y="279" width="414" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">作詞：謝明訓    作曲：片山圭司
+&lt;&lt;前奏&gt;&gt;
+妳知道嗎 愛妳並不容易 還需要很多勇氣
+是天意吧 好多話說不出去 就是怕妳負擔不起
+
+妳相信嗎 這一生遇見妳 是上輩子我欠妳
+是天意吧 讓我愛上妳 才又讓妳離我而去
+
+也許輪迴裏 早已註定 今生就該我還給妳
+一顆心在風雨裏飄來飄去都是為了妳
+
+一路上有妳 苦一點也願意
+就算是為了分離與我相遇
+一路上有妳 痛一點也願意
+就算這輩子註定要和妳分離
+&lt;&lt;間奏&gt;&gt;
+妳知道嗎 愛妳並不容易 還需要很多勇氣
+是天意吧 好多話說不出去 就是怕妳負擔不起
+
+妳相信嗎 這一生遇見妳 是上輩子我欠妳
+是天意吧 讓我愛上妳 才又讓妳離我而去
+
+也許輪迴裏 早已註定 今生就該我還給妳
+一顆心在風雨裏飄來飄去都是為妳
+
+一路上有妳 苦一點也願意
+就算是為了分離與我相遇
+一路上有妳 痛一點也願意
+就算這輩子註定要和妳分離
+&lt;&lt;間奏&gt;&gt;
+一路上有妳 苦一點也願意
+就算是為了分離與我相遇
+一路上有妳 痛一點也願意
+就算這輩子註定要和妳分離
+
+一路上有妳 苦一點也願意
+就算是為了分離與我相遇
+一路上有妳 痛一點也願意
+就算只能在夢裡擁抱妳
+&lt;&lt;END&gt;&gt;</mutableString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="一路上有你" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4a-S0-dVn">
+                                <rect key="frame" x="5" y="216" width="408" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1Ms-Rv-noC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57H-fw-CXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5041" y="-2323"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xSu-Wl-g7O">
+            <objects>
+                <viewController id="8e7-8m-Zzf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OHV-LX-Hkq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="吻別-left" translatesAutoresizingMaskIntoConstraints="NO" id="ljg-lo-oI9">
+                                <rect key="frame" x="0.0" y="64" width="166" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="吻別-right" translatesAutoresizingMaskIntoConstraints="NO" id="PwQ-dZ-x4Z">
+                                <rect key="frame" x="165" y="64" width="249" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hcS-qv-aVb">
+                                <rect key="frame" x="0.0" y="279" width="414" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">作詞：何啟弘    作曲：殷文琦
+前塵往事成雲煙 消散在彼此眼前
+就連說過了再見 也看不見你有些哀怨
+給我的一切 你不過是在敷衍
+你笑得越無邪 我就會愛你愛得更狂野
+
+總在剎那間 有一些了解 說過的話不可能會實現
+就在一轉眼 發現你的臉 已經陌生不會再像從前
+我的世界開始下雪 冷得讓我無法多愛一天
+冷得連隱藏的遺憾 都那麼的明顯
+
+我和你吻別 在無人的街 讓風痴笑我上能拒絕
+我和你吻別 在狂亂的夜 我的心 等著迎接傷悲
+
+想要給你的思念 就像風箏斷了線
+飛不進你的世界 也溫暖不了你的視線
+我已經看見 一齣悲劇正上演
+劇終沒有喜悅 我仍然躲在你的夢裡面
+
+總在剎那間 有一些了解 說過的話不可能會實現
+就在一轉眼 發現你的臉 已經陌生不會再像從前
+我的世界開始下雪 冷得讓我無法多愛一天
+冷得連隱藏的遺憾 都那麼的明顯
+
+我和你吻別 在無人的街 讓風痴笑我上能拒絕
+我和你吻別 在狂亂的夜 我的心 等著迎接傷悲
+
+我和你吻別 在無人的街 讓風痴笑我上能拒絕
+我和你吻別 在狂亂的夜 我的心 等著迎接傷悲
+
+</mutableString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="吻別" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghI-Zn-CPm">
+                                <rect key="frame" x="5" y="216" width="408" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Txo-sU-Rfs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7G-aN-biR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5725" y="-2323"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="l8L-gn-zYA">
+            <objects>
+                <viewController id="0Fj-dV-MMx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zx5-ZZ-dVg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="每天愛你多一些-left" translatesAutoresizingMaskIntoConstraints="NO" id="SUG-cd-fed">
+                                <rect key="frame" x="0.0" y="64" width="166" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="每天愛你多一些-right" translatesAutoresizingMaskIntoConstraints="NO" id="40y-hB-Syv">
+                                <rect key="frame" x="165" y="64" width="249" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zdj-Qt-xtx">
+                                <rect key="frame" x="0.0" y="279" width="414" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">作詞：林振強    作曲：桑田佳佑
+
+前奏
+
+無求甚麼 無尋甚麼 突破天地 但求夜深
+奔波以後 能望見你 你可否知道麼
+平凡亦可 平淡亦可 自有天地 但求日出
+清早到後 能望見你 那已經很好過
+
+當身邊的一切如風 是你讓我找到根蒂
+不願離開 只願留低 情是永不枯萎
+
+而每過一天 每一天 這醉者
+便愛你多些 再多些 至滿瀉
+我發覺我最愛與你編寫 以後明天的深夜
+
+而每過一天 每一天 這醉者
+便愛你多些 再多些 至滿瀉
+我最愛你與我這生一起 哪懼明天風高路斜
+
+名是甚麼 財是甚麼 是好滋味 但如在生
+朝朝每夜 能望見你 那更加的好過
+
+當身邊的一切如風 是你讓我找到根蒂
+不願離開 只願留低 情是永不枯萎
+
+而每過一天 每一天 這醉者
+便愛你多些 再多些 至滿瀉
+我發覺我最愛與你編寫 以後明天的深夜
+
+而每過一天 每一天 這醉者
+便愛你多些 再多些 至滿瀉
+我最愛你與我這生一起 哪懼明天風高路斜
+
+而每過一天 每一天 這醉者
+便愛你多些 再多些 至滿瀉
+我發覺我最愛與你編寫 以後明天的深夜
+
+而每過一天 每一天 這情深者
+便愛你多些 然後再多一些
+我最愛你與我這生一起 哪懼明天風高路斜</mutableString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="每天愛你多一些 - Album Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8N-YA-SYv">
+                                <rect key="frame" x="5" y="216" width="408" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RN9-Gu-Hnq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M0C-Q3-IIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6441" y="-2323"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lo1-tG-2bl">
+            <objects>
+                <viewController id="mEy-uN-x47" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NiV-w6-eOQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cfc-02-DWw">
+                                <rect key="frame" x="0.0" y="279" width="414" height="406"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">作詞：陳少琪    作曲：李偉菘
+旁人來靜靜看我到底哀傷等什麼
+旁人來回關心中安慰愛已沒結果
+熱烈地開解一生等妳也是奈何
+彷彿我在拼命要希罕援助
+
+旁人來靜靜看我到底哪裏出錯
+何時重逢迷失中飄起造首歌
+是舊日是認真執著的某個故事
+可惜這份信念到今天多麼無助
+
+曾天天真真的妳 愛隻想某日別離後
+如孤孤單單的我 會否等妳就似這歌
+而飄飄忽忽的妳 到真的決定別離後
+留低空空虛虛的我 估不到結局是這歌
+
+你知不知道 你知不知道
+我等到花兒也謝了
+你知不知道 你知不知道
+我等到花兒也謝了
+
+旁人來靜靜看我到底哪裏出錯
+何時重逢迷失中飄起造首歌
+是舊日是認真執著的某個故事
+可惜這份信念到今天多麼無助
+
+曾天天真真的妳 愛隻想某日別離後
+如孤孤單單的我 會否等妳就似這歌
+而飄飄忽忽的妳 到真的決定別離後
+留低空空虛虛的我 估不到結局是這歌
+
+你知不知道 你知不知道
+我等到花兒也謝了
+你知不知道 你知不知道
+我等到花兒也謝了
+你知不知道 你知不知道
+我等到花兒也謝了</mutableString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="我等到花兒也謝了-left" translatesAutoresizingMaskIntoConstraints="NO" id="b5o-2D-qC9">
+                                <rect key="frame" x="0.0" y="65" width="166" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="我等到花兒也謝了-right" translatesAutoresizingMaskIntoConstraints="NO" id="Kwu-3o-Vh3">
+                                <rect key="frame" x="165" y="64" width="249" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我等到花兒也謝了 - Album Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="np0-P3-ct6">
+                                <rect key="frame" x="5" y="216" width="408" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iPd-z1-mQK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGC-wQ-rEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4344.927536231884" y="-2323.3695652173915"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xrn-OJ-CBr">
+            <objects>
+                <viewController id="vsh-8D-63P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N8o-f5-JTG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="一千個傷心的理由-left" translatesAutoresizingMaskIntoConstraints="NO" id="COc-BB-G6H">
+                                <rect key="frame" x="0.0" y="64" width="166" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fc7-JA-FYu">
+                                <rect key="frame" x="0.0" y="279" width="414" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">作詞：邢增華    作曲：李偲菘
+前奏
+一千個傷心的理由 /_\
+
+愛過的人 我已不再擁有
+
+許多故事有傷心的理由
+
+這一次 我的愛情 等不到天長地久
+
+錯過的人 是否可以回首
+上頭的人 是否可以放過
+
+愛過的心 沒有任何請求 許多故事 有傷心的理由
+
+這一次 我的愛情 等不到天長地久
+
+走過的路 再也不能停留
+
+一千個傷心的理由
+(傷心的理由)
+一千個傷心的理由
+(傷心的理由)
+
+
+最後我的愛情在故事裡慢慢陳舊
+
+一千個傷心的理由
+(傷心的理由)
+一千個傷心的理由
+(傷心的理由)
+
+
+最後在別人的故事裡我被遺忘
+
+愛過的心 沒有任何請求 許多故事 有傷心的理由
+
+這一次 我的愛情 等不到天長地久
+
+走過的路 再也不能停留
+
+一千個傷心的理由
+(傷心的理由)
+一千個傷心的理由
+(傷心的理由)
+
+
+最後我的愛情在故事裡慢慢陳舊
+
+一千個傷心的理由
+(傷心的理由)
+一千個傷心的理由
+(傷心的理由)
+
+
+最後在別人的故事裡我被遺忘
+
+間奏
+
+一千個傷心的理由
+(傷心的理由)
+一千個傷心的理由
+(傷心的理由)
+
+
+最後我的愛情在故事裡慢慢陳舊
+
+一千個傷心的理由
+(傷心的理由)
+一千個傷心的理由
+(傷心的理由)
+
+
+最後在別人的故事裡我 被~ 遺 忘</mutableString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="一千個傷心的理由-right" translatesAutoresizingMaskIntoConstraints="NO" id="5QC-M3-PeN">
+                                <rect key="frame" x="165" y="64" width="249" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="一千個傷心的理由 - Album Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLo-fa-zxX">
+                                <rect key="frame" x="5" y="216" width="407" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fSD-gI-hCH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8JI-sn-Oje" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2998.5507246376815" y="-2323.3695652173915"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3a9-IS-Wsa">
+            <objects>
+                <viewController id="6on-8x-Odf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2eo-6N-MFr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c7m-K3-pSL">
+                                <rect key="frame" x="0.0" y="321" width="414" height="366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">「歌神」張學友集經典於一身、創經典的誕生，「學友·經典世界巡迴演唱會」，首站於2016年10月在北京開跑，2017年2月來到台北小巨蛋經典開唱，以「經典」為主題，四面台舞台呈現，演出精采絕倫、場場秒殺！而後進入新紀元，張學友四面台從室內場館搬到大型戶外場地，完成更高難度的經典挑戰！在嶄新的2018年，經典舞台以及節目內容將完整帶到泰國曼谷、星馬、美國、澳洲等地演出，接著於4月份重返台北小巨蛋，屆時將與歌迷朋友一起共襄盛舉跨越輝煌紀錄！
+
+2018年4月份連續兩個週末於台北小巨蛋開唱，「A CLASSIC TOUR學友·經典世界巡迴演唱會」挑戰歌神心中最經典的四面舞台，以LED全面舖天蓋地，視覺呈現上讓人有目不暇給的最佳感受，360度超立體四面台，結合31人的大型樂團暨管弦樂的編制，及30位專業舞者與特技演員，以世界級製作規格，視覺與聽覺的完美搭配，堪稱「經典中的經典」！
+
+永恆的經典演唱會「A CLASSIC TOUR學友·經典」終會落幕，2018台北站更是意義非凡。因為所有能參與2018台北小巨蛋演唱會的歌迷朋友們，將與「歌神」張學友一起再創「A CLASSIC TOUR學友·經典」的新紀錄，僅此六場經典演唱會，每一場3小時40多首串聯著我們的過去現在與未來，演出限定、經典長存。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背景圖" translatesAutoresizingMaskIntoConstraints="NO" id="yez-Cp-wbY">
+                                <rect key="frame" x="-3" y="64" width="421" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VAy-3S-4MB">
+                                <rect key="frame" x="0.0" y="254" width="414" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">唯有傳奇 才能創造經典
+中國信託精彩呈獻「學友·經典世界巡迴演唱會–2018台北站」
+「歌神」張學友重返台北小巨蛋 限定六場經典開唱</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SCx-9p-a14"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7w2-4R-Xee"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxJ-ke-WlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2195.6521739130435" y="-104.34782608695653"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="O4f-hY-C9A">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="icG-mi-7NT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xSD-WG-VrL">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CLd-cT-3i6" kind="relationship" relationship="viewControllers" id="4fy-4p-laY"/>
+                        <segue destination="d8A-TU-FIC" kind="relationship" relationship="viewControllers" id="kFP-DY-iDF"/>
+                        <segue destination="uih-a7-aa9" kind="relationship" relationship="viewControllers" id="meu-KU-Ouz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcT-fW-YE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450.72463768115944" y="-1013.3152173913044"/>
+        </scene>
+        <!--節目介紹-->
+        <scene sceneID="FJ6-bk-NfC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CLd-cT-3i6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="節目介紹" image="showlist" id="grB-NW-A8u"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mjh-dT-Rol">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6on-8x-Odf" kind="relationship" relationship="rootViewController" id="KUD-9F-hGi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wm8-Ld-mpc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="-104"/>
+        </scene>
+        <!--歌單介紹-->
+        <scene sceneID="tVC-UA-Psu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d8A-TU-FIC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="歌單介紹" image="songslist" id="JDi-V7-J6Y"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9j7-Je-ftf">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pH5-x7-awe" kind="relationship" relationship="rootViewController" id="8P0-Kh-nii"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4nk-lm-ZA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="-1776"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CzR-Ec-oJl">
+            <objects>
+                <viewController id="h9A-zT-cjD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TDF-5t-o0l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MwT-kJ-pCR">
+                                <rect key="frame" x="0.0" y="240" width="414" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">售票時間：2018年01月20日(六) 下午13:00起全面開賣
+演出時間：2018/04/20 (五) 19:30 台北小巨蛋 
+　　　　　2018/04/21 (六) 19:30 台北小巨蛋
+　　　　　2018/04/22 (日) 19:30 台北小巨蛋
+　　　　　2018/04/27 (五) 19:30 台北小巨蛋
+　　　　　2018/04/28 (六) 19:30 台北小巨蛋
+　　　　　2018/04/29 (日) 19:30 台北小巨蛋
+票　　價：5800、4800、4200、3600、2800、2200、1800、800
+
+主辦單位：上引娛樂、超級圓頂、環球音樂</mutableString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="introduction" translatesAutoresizingMaskIntoConstraints="NO" id="1Xw-Qe-Te4">
+                                <rect key="frame" x="0.0" y="64" width="420" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="座位圖" translatesAutoresizingMaskIntoConstraints="NO" id="QiM-hk-H6o">
+                                <rect key="frame" x="57" y="434" width="286" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="67j-DY-UmC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TVr-Hf-zmw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rjH-nS-SEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2195.6521739130435" y="-1013.3152173913044"/>
+        </scene>
+        <!--相關訊息-->
+        <scene sceneID="ZTL-k9-hqM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uih-a7-aa9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="相關訊息" image="detaillist" id="k0U-2T-bGt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mqP-ZJ-wVc">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h9A-zT-cjD" kind="relationship" relationship="rootViewController" id="hdp-Rq-AFx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pa0-7Z-mjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="-1013"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="detaillist" width="30" height="30"/>
+        <image name="introduction" width="873" height="494"/>
+        <image name="showlist" width="30" height="30"/>
+        <image name="songslist" width="30" height="30"/>
+        <image name="一千個傷心的理由-left" width="213" height="269"/>
+        <image name="一千個傷心的理由-right" width="264" height="245"/>
+        <image name="一路上有你-left" width="268" height="270"/>
+        <image name="一路上有你-right" width="292" height="243"/>
+        <image name="吻別-left" width="268" height="269"/>
+        <image name="吻別-right" width="284" height="241"/>
+        <image name="座位圖" width="406" height="630"/>
+        <image name="我等到花兒也謝了-left" width="267" height="223"/>
+        <image name="我等到花兒也謝了-right" width="296" height="247"/>
+        <image name="每天愛你多一些-left" width="268" height="269"/>
+        <image name="每天愛你多一些-right" width="282" height="244"/>
+        <image name="經典曲目" width="847" height="639"/>
+        <image name="背景圖" width="854" height="371"/>
+        <image name="袛想一生跟你走-left" width="230" height="270"/>
+        <image name="袛想一生跟你走-right" width="298" height="249"/>
+    </resources>
 </document>
